@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Grid Chrome Extension",
+  "version": "1.2",
+  "description": "Grid Chrome Extension gives passcode from grid.",
+  "icons": {"128": "icon.png"},
+  "content_scripts": [{
+    "matches": ["*://*.*"],
+    "js": ["content.js"]
+  }],
+  "browser_action": {
+    "default_title": "Grid",
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": 
+  [
+	"activeTab",
+	"*"
+  ]
+}
+
